@@ -27,7 +27,7 @@ namespace DependencyInjectionKeyedService.Controllers
         [Route("GetSmsKeyedNotification")]
         public IActionResult GetSmsKeyedNotification()
         {
-            var res = _smsNotificationKeyedService.Send("notif");
+            var res = _smsNotificationKeyedService.Send("notification");
 
             return Ok(res);
         }
